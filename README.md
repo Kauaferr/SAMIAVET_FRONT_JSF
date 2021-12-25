@@ -1,3 +1,3 @@
-# implant_rag_front
+# SAMIAVET_FRONT
 
-Projeto destinado para o setor de implantação referente ao front-end.
+Projeto destinado a criação de um sistema JSF para uma clínica veterinária
