@@ -1,14 +1,13 @@
 package br.com.samiavet_front.dto;
 
 public class FichaClinicaDto {
-	
 	private Integer id;
 	private String nome_proprietario; 
 	private String telefone;
 	private String email;
 	private String endereco;
 	private String cpf;
-	private String nome_animal;
+	private String nomeAnimal;
 	private String especie_animal;
 	private String raca_animal;
 	private String sexo_animal;
@@ -21,19 +20,20 @@ public class FichaClinicaDto {
 	private String pelugem_animal;
 	private String peso_animal;
 	private String data_registro_animal;
-
+	
+	
+	
 	public FichaClinicaDto(Integer id, String nome_proprietario, String telefone, String email, String endereco,
 			String cpf, String nome_animal, String especie_animal, String raca_animal, String sexo_animal,
 			String historico_animal, Double fc_animal, Double fr_animal, Double p_animal, Double t_animal,
 			String data_nascimento_animal, String pelugem_animal, String peso_animal, String data_registro_animal) {
-		super();
 		this.id = id;
 		this.nome_proprietario = nome_proprietario;
 		this.telefone = telefone;
 		this.email = email;
 		this.endereco = endereco;
 		this.cpf = cpf;
-		this.nome_animal = nome_animal;
+		this.nomeAnimal = nome_animal;
 		this.especie_animal = especie_animal;
 		this.raca_animal = raca_animal;
 		this.sexo_animal = sexo_animal;
@@ -87,12 +87,15 @@ public class FichaClinicaDto {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getNome_animal() {
-		return nome_animal;
+	
+	public String getNomeAnimal() {
+		return nomeAnimal;
 	}
-	public void setNome_animal(String nome_animal) {
-		this.nome_animal = nome_animal;
+
+	public void setNomeAnimal(String nomeAnimal) {
+		this.nomeAnimal = nomeAnimal;
 	}
+
 	public String getEspecie_animal() {
 		return especie_animal;
 	}
@@ -165,4 +168,9 @@ public class FichaClinicaDto {
 	public void setData_registro_animal(String data_registro_animal) {
 		this.data_registro_animal = data_registro_animal;
 	}
+
+	
+	
+	
+	
 }

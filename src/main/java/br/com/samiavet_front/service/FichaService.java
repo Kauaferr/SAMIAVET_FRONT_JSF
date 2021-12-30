@@ -1,7 +1,8 @@
 package br.com.samiavet_front.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.samiavet_front.client.FichaClient;
@@ -39,5 +40,23 @@ public class FichaService {
 	public Boolean cadastrar(FichaClinicaDto ficha, String email) {
 		
 		return this.ficha_clinica_cliente.cadastrar(ficha, email);
+	}
+	
+	public List<FichaClinicaDto> listar(){
+		
+		return this.ficha_clinica_cliente.listar();
+	}
+	
+	public List<FichaClinicaDto> listarPorNomeAnimal(String nomeAnimal){
+		
+		return this.ficha_clinica_cliente.listarPorNomeAnimal(nomeAnimal);
+	}
+	public void excluir(Integer id) {
+		this.ficha_clinica_cliente.deletar(id);
+	}
+	
+	public Boolean editar(FichaClinicaDto ficha, String email) {
+		
+		return this.ficha_clinica_cliente.editar(ficha, email);
 	}
 }

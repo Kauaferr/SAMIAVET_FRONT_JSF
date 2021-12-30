@@ -197,7 +197,7 @@
         <p:tab title="DADOS ANIMAL:">
                  <p:tab title="DADOS PROPRIETÁRIO: ">
 								    <h:outputText  value="Nome: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nome_animal}" placeholder="Nome"/>
+								    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nomeAnimal}" placeholder="Nome"/>
 								 
 								 	<br/>
 								 	<br/>
@@ -260,7 +260,7 @@
 									<p:inputTextarea rows="6" cols="33" styleClass="inputTextArea" value="#{MBFichaClinica.fichaClinica.historico_animal}" placeholder="Histórico"/>	
 									 <br/>
 								    <br/>
-									<p:commandButton value="CADASTRAR" styleClass="btn-cadastrar" actionListener="#{MBFichaClinica.printar}" update=":formCadastrar :msgGlobal"/>	
+									<p:commandButton value="CADASTRAR" styleClass="btn-cadastrar" actionListener="#{MBFichaClinica.cadastrar}" update=":formCadastrar :msgGlobal"/>	
 								    
 				       	 </p:tab>
       		 		 </p:tab>
