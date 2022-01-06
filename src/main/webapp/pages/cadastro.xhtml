@@ -154,6 +154,10 @@
 			height: 40px;
 			font-size: 15px;
 		}
+		.panel-proprietario{
+		
+			font-size: 15px;
+		}
 	</style>
 	<img src="../resources/imagens/SamiaVet.png" class="img-samiavet"/>
 	
@@ -165,103 +169,103 @@
 	              <p:tabView>
 				        <p:tab title="DADOS PROPRIETÁRIO: ">
 				            
-				                
-				                
-				                    <h:outputText  value="Nome: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nome_proprietario}" placeholder="Nome"/>
-				 
-				 					
-								    <h:outputText  value="CPF: " styleClass="outPutTexts"/>
-								    <p:inputMask   mask="999.999.999-99" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.cpf}" placeholder="CPF"/>
-				 
-				 
-				                   	<br/>
-								 	<br/>
-								    <h:outputText  value="E-mail: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.email}" placeholder="E-mail"/>
-				 					<br/>
-								 	<br/>
-								 	
-				                    <h:outputText value="Telefone: " styleClass="outPutTexts"/>
-									<p:inputMask   mask="(99) 99999-9999" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.telefone}" placeholder="Telefone"/>	
-									<br/>
-								 	<br/>	
-								 		 
-				                    <h:outputText value="Endereço: " styleClass="outPutTexts"/>
-				                    <br/>
-								 	<br/>
-									<p:inputTextarea rows="6" cols="33" styleClass="inputTextAreaEndereco"  value="#{MBFichaClinica.fichaClinica.endereco}" placeholder="Endereço"/>				                    
-				                    
+		                
+		                
+		                    <h:outputText  value="Nome: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nome_proprietario}" placeholder="Nome"/>
+		 
+		 					
+						    <h:outputText  value="CPF: " styleClass="outPutTexts"/>
+						    <p:inputMask   mask="999.999.999-99" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.cpf}" placeholder="CPF"/>
+		 
+		 
+		                   	<br/>
+						 	<br/>
+						    <h:outputText  value="E-mail: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.email}" placeholder="E-mail"/>
+		 					<br/>
+						 	<br/>
+						 	
+		                    <h:outputText value="Telefone: " styleClass="outPutTexts"/>
+							<p:inputMask   mask="(99) 99999-9999" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.telefone}" placeholder="Telefone"/>	
+							<br/>
+						 	<br/>	
+						 		 
+		                    <h:outputText value="Endereço: " styleClass="outPutTexts"/>
+		                    <br/>
+						 	<br/>
+							<p:inputTextarea rows="6" cols="33" styleClass="inputTextAreaEndereco"  value="#{MBFichaClinica.fichaClinica.endereco}" placeholder="Endereço"/>				                    
+		                    
 				               
 				        </p:tab>
         <p:tab title="DADOS ANIMAL:">
                  <p:tab title="DADOS PROPRIETÁRIO: ">
-								    <h:outputText  value="Nome: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nomeAnimal}" placeholder="Nome"/>
-								 
-								 	<br/>
-								 	<br/>
-								    <h:outputText  value="Espécie: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.especie_animal}" placeholder="Espécie"/>
-								 
-								 	<br/>
-								 	<br/>
-						   			<h:outputText  value="Raça: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.raca_animal}" placeholder="Raça"/>
-								 
-								 	<br/>
-								 	<br/>
-								    <h:outputText  value="Pelugem: " styleClass="outPutTexts"/>
-								    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.pelugem_animal}" placeholder="Pelugem"/>
-								    
-								    
-								    
-								 	<br/>
-								 	<br/>
-								    <h:outputText  value="Sexo:" styleClass="outPutTexts"/>
-								    <br/>
-								    <br/>
-								    <p:selectOneMenu id="selectOne" styleClass="inputSexo" value="#{MBFichaClinica.fichaClinica.sexo_animal}" placeholder="Sexo">
-								        <f:selectItem itemLabel="Macho" itemValue="MACHO" />
-								        <f:selectItem itemLabel="Fêmea" itemValue="FÊMEA" />
-								    </p:selectOneMenu>
-								    
-								    
-								    <br/>
-								    <br/>
-								    <h:outputText  value="FC. " styleClass="outPutTextFc"/>
-								    <p:inputText  styleClass="inputFc" value="#{MBFichaClinica.fichaClinica.fc_animal}" placeholder="FC."/>
-								    
-								    
-								    <h:outputText  value="FR. " styleClass="outPutTextFr"/>
-								    <p:inputText styleClass="inputFr" value="#{MBFichaClinica.fichaClinica.fr_animal}" placeholder="FR."/>
-								    
-								     <h:outputText  value="P. " styleClass="outPutTextP"/>
-								     
-								    <p:inputText  styleClass="inputP" value="#{MBFichaClinica.fichaClinica.p_animal}" placeholder="P."/>
-								    
-								     <h:outputText  value="T(°C) " styleClass="outPutTextT"/>
-								    <p:inputText  styleClass="inputT" value="#{MBFichaClinica.fichaClinica.t_animal}" placeholder="T°C"/>
-								    
-								    <br/>
-								    <br/>
-								    <h:outputText  value="Data Nascimento: " styleClass="outPutTexts"/>
-								    <p:inputMask id="date"  mask="99/99/9999" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.data_nascimento_animal}" placeholder="Data Nasc."/>
-								    
-								    <h:outputText  value="Peso: " styleClass="outPutTextT"/>
-								    <p:inputMask   mask="99,999 KG" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.peso_animal}" placeholder="Peso"/>
-								    
-								    
-								    <br/>
-								    <br/>
-									<h:outputText  value="Histórico: " styleClass="outPutTexts"/>    	
-									 <br/>
-								    <br/>							
-									<p:inputTextarea rows="6" cols="33" styleClass="inputTextArea" value="#{MBFichaClinica.fichaClinica.historico_animal}" placeholder="Histórico"/>	
-									 <br/>
-								    <br/>
-									<p:commandButton value="CADASTRAR" styleClass="btn-cadastrar" actionListener="#{MBFichaClinica.cadastrar}" update=":formCadastrar :msgGlobal"/>	
-								    
+						    <h:outputText  value="Nome: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs"  value="#{MBFichaClinica.fichaClinica.nomeAnimal}" placeholder="Nome"/>
+						 
+						 	<br/>
+						 	<br/>
+						    <h:outputText  value="Espécie: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.especie_animal}" placeholder="Espécie"/>
+						 
+						 	<br/>
+						 	<br/>
+				   			<h:outputText  value="Raça: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.raca_animal}" placeholder="Raça"/>
+						 
+						 	<br/>
+						 	<br/>
+						    <h:outputText  value="Pelugem: " styleClass="outPutTexts"/>
+						    <p:inputText  styleClass="inputs" value="#{MBFichaClinica.fichaClinica.pelugem_animal}" placeholder="Pelugem"/>
+						    
+						    
+						    
+						 	<br/>
+						 	<br/>
+						    <h:outputText  value="Sexo:" styleClass="outPutTexts"/>
+						    <br/>
+						    <br/>
+						    <p:selectOneMenu id="selectOne" styleClass="inputSexo" value="#{MBFichaClinica.fichaClinica.sexo_animal}" placeholder="Sexo">
+						        <f:selectItem itemLabel="Macho" itemValue="MACHO" />
+						        <f:selectItem itemLabel="Fêmea" itemValue="FÊMEA" />
+						    </p:selectOneMenu>
+						    
+						    
+						    <br/>
+						    <br/>
+						    <h:outputText  value="FC. " styleClass="outPutTextFc"/>
+						    <p:inputText  styleClass="inputFc" value="#{MBFichaClinica.fichaClinica.fc_animal}" placeholder="FC."/>
+						    
+						    
+						    <h:outputText  value="FR. " styleClass="outPutTextFr"/>
+						    <p:inputText styleClass="inputFr" value="#{MBFichaClinica.fichaClinica.fr_animal}" placeholder="FR."/>
+						    
+						     <h:outputText  value="P. " styleClass="outPutTextP"/>
+						     
+						    <p:inputText  styleClass="inputP" value="#{MBFichaClinica.fichaClinica.p_animal}" placeholder="P."/>
+						    
+						     <h:outputText  value="T(°C) " styleClass="outPutTextT"/>
+						    <p:inputText  styleClass="inputT" value="#{MBFichaClinica.fichaClinica.t_animal}" placeholder="T°C"/>
+						    
+						    <br/>
+						    <br/>
+						    <h:outputText  value="Data Nascimento: " styleClass="outPutTexts"/>
+						    <p:inputMask id="date"  mask="99/99/9999" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.data_nascimento_animal}" placeholder="Data Nasc."/>
+						    
+						    <h:outputText  value="Peso: " styleClass="outPutTextT"/>
+						    <p:inputMask   mask="99,999 KG" styleClass="inputData" value="#{MBFichaClinica.fichaClinica.peso_animal}" placeholder="Peso"/>
+						    
+						    
+						    <br/>
+						    <br/>
+							<h:outputText  value="Histórico: " styleClass="outPutTexts"/>    	
+							 <br/>
+						    <br/>							
+							<p:inputTextarea rows="6" cols="33" styleClass="inputTextArea" value="#{MBFichaClinica.fichaClinica.historico_animal}" placeholder="Histórico"/>	
+							 <br/>
+						    <br/>
+							<p:commandButton value="CADASTRAR" styleClass="btn-cadastrar" actionListener="#{MBFichaClinica.cadastrar}" update=":formCadastrar :msgGlobal"/>	
+						    
 				       	 </p:tab>
       		 		 </p:tab>
     			</p:tabView>
