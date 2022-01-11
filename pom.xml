@@ -18,14 +18,16 @@
   
   
  <properties>
-     <webapp-runner.version>9.0.13.0</webapp-runner.version>
-
+        <webapp-runner.version>9.0.13.0</webapp-runner.version>
+             
+             
     <java.version>1.8</java.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
- 
-  </properties>
+     <Tomcat.version>8.5.50</Tomcat.version>
+
+    </properties>
   
   <dependencies>
   
