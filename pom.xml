@@ -6,6 +6,22 @@
   <packaging>war</packaging>
   <name>SAMIAVET_FRONT</name>
   <!-- ||||||  REPOSITÓRIO DO PF    ||||||-->
+	
+	
+	
+	
+	<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>br.com.feltex</groupId>
+    <artifactId>academicnet</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>academicnet</name>
+    <packaging>war</packaging>
+    <description>Projeto completo Spring Boot</description>
 <repositories>
   <repository>
 	<id>prime-repo</id>
